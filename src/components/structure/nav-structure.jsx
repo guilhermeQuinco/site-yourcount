@@ -44,7 +44,7 @@ const marketingSolutions = [
   },
 ];
 
-export function MainNavBar({ className }) {
+export default function MainNavBar({ className }) {
   const pathname = usePathname();
   return (
     <div className="relative">

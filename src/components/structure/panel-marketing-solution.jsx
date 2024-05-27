@@ -2,7 +2,7 @@ import Illustration from "../svg/illustration";
 import { Separator } from "./separator";
 import { FaArrowAltCircleRight } from "react-icons/fa";
 
-export function PanelMarketingSolutions({ item }) {
+export default function PanelMarketingSolutions({ item }) {
   return (
     <section className="w-full rounded-lg bg-black border-2 border-[#f22e9a] h-[500px] flex items-center p-14">
       <div className="w-full flex flex-row justify-between items-center">
