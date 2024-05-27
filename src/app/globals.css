@@ -99,4 +99,32 @@
   .flexEnd {
     @apply flex items-center justify-end;
   }
+
+  .btn_blue {
+    @apply bg-[#1cbae9] px-8 py-5 w-[30%] text-white;
+  }
+}
+
+/* Slide styles */
+
+.slide-container-desktop {
+  @apply relative lg:flex hidden h-[600px] w-[800px]  items-center justify-center;
+  perspective: 450px;
+  transform-style: preserve-3d;
+}
+
+.card {
+  @apply absolute shadow-lg overflow-hidden rounded-2xl transition-all duration-700;
+}
+
+.btn-slide-switch-card {
+  @apply absolute z-40 flex text-lg;
+}
+
+.btn-slide-switch-card-left {
+  @apply right-1/2 top-1/2 translate-x-[-550px];
+}
+
+.btn-slide-switch-card-right {
+  @apply right-1/2 top-1/2 translate-x-[550px];
 }

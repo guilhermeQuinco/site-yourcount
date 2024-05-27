@@ -241,3 +241,34 @@ export const DropdownForm = [
   "de 400 mil até 1 milhão",
   "1 milhão +",
 ];
+
+export const FEATURES = [
+  {
+    title: "Cumprimento Legal",
+    icon: "/docIcon.svg",
+    variant: "green",
+    description:
+      "Garante que a empresa esteja em conformidade com todas as leis fiscais e regulamentações contábeis, evitando multas e penalidades.",
+  },
+  {
+    title: "Tomada de decisão informada",
+    icon: "/decision.svg",
+    variant: "green",
+    description:
+      "Dados financeiros precisos e detalhados que são essenciais para a tomada de decisões estratégicas informadas e planejamento financeiro eficaz.",
+  },
+  {
+    title: "Gestão Eficiente de Fluxo de Caixa",
+    icon: "/cash.svg",
+    variant: "green",
+    description:
+      "Ajuda na gestão eficaz do fluxo de caixa, permitindo um controle melhor sobre as entradas e saídas de recursos financeiros.",
+  },
+  {
+    title: "Transparência e Confiança ",
+    icon: "/handshake.svg",
+    variant: "orange",
+    description:
+      " Transparência e a confiança com stakeholders, incluindo investidores, bancos e outras partes interessadas, através de relatórios financeiros claros e confiáveis. ",
+  },
+];
