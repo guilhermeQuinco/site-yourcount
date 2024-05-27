@@ -31,7 +31,12 @@ const Products = () => {
                   index === 0 ? " col-span-2" : ""
                 }`}
               >
-                <img src={item} alt="" className="rounded-lg " key={index} />
+                <img
+                  src={item}
+                  alt="products"
+                  className="rounded-lg "
+                  key={index}
+                />
               </div>
             ))}
           </div>

@@ -166,13 +166,13 @@ export const MARKETING_FAQ = [
       " Yes. It's animated by default, but you can disable it if you prefer.",
   },
   {
-    value: "item-4",
+    value: "item-5",
     title: "Is it animated? ",
     content:
       " Yes. It's animated by default, but you can disable it if you prefer.",
   },
   {
-    value: "item-4",
+    value: "item-6",
     title: "Is it animated? ",
     content:
       " Yes. It's animated by default, but you can disable it if you prefer.",
@@ -203,13 +203,13 @@ export const HOME_FAQ = [
       " Yes. It's animated by default, but you can disable it if you prefer.",
   },
   {
-    value: "item-4",
+    value: "item-5",
     title: "Is it animated? ",
     content:
       " Yes. It's animated by default, but you can disable it if you prefer.",
   },
   {
-    value: "item-4",
+    value: "item-6",
     title: "Is it animated? ",
     content:
       " Yes. It's animated by default, but you can disable it if you prefer.",
@@ -245,28 +245,28 @@ export const DropdownForm = [
 export const FEATURES = [
   {
     title: "Cumprimento Legal",
-    icon: "/docIcon.svg",
+    icon: "",
     variant: "green",
     description:
       "Garante que a empresa esteja em conformidade com todas as leis fiscais e regulamentações contábeis, evitando multas e penalidades.",
   },
   {
     title: "Tomada de decisão informada",
-    icon: "/decision.svg",
+    icon: "",
     variant: "green",
     description:
       "Dados financeiros precisos e detalhados que são essenciais para a tomada de decisões estratégicas informadas e planejamento financeiro eficaz.",
   },
   {
     title: "Gestão Eficiente de Fluxo de Caixa",
-    icon: "/cash.svg",
+    icon: "",
     variant: "green",
     description:
       "Ajuda na gestão eficaz do fluxo de caixa, permitindo um controle melhor sobre as entradas e saídas de recursos financeiros.",
   },
   {
     title: "Transparência e Confiança ",
-    icon: "/handshake.svg",
+    icon: "",
     variant: "orange",
     description:
       " Transparência e a confiança com stakeholders, incluindo investidores, bancos e outras partes interessadas, através de relatórios financeiros claros e confiáveis. ",

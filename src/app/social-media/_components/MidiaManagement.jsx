@@ -19,7 +19,12 @@ const MidiaManagement = () => {
                   index === 0 ? " row-span-2" : ""
                 }`}
               >
-                <img src={item} alt="" className="rounded-lg " key={index} />
+                <img
+                  src={item}
+                  alt="midiaManagement"
+                  className="rounded-lg "
+                  key={index}
+                />
               </div>
             ))}
           </div>

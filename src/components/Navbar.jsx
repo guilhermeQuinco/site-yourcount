@@ -42,7 +42,7 @@ const NavBar = () => {
         <NavigationMenu>
           <NavigationMenuList>
             <Link href={"/"}>
-              <Image src={Logo} width={200} height={100} />
+              <Image src={Logo} width={200} height={100} alt="logoNavbar" />
             </Link>
             <div className="flex flex-row gap-5 items-center ">
               <Link
@@ -167,7 +167,7 @@ const NavBar = () => {
         <nav className=" lg:hidden flex max-container padding-container flexBetween">
           <div className="flex flex-row items-center gap-5">
             <Link href={"/"}>
-              <Image src={Logo2} width={50} height={50} />
+              <Image src={Logo2} width={50} height={50} alt="logoMobile" />
             </Link>
             <div
               className="px-5 border-l-2 border-zinc-800"

@@ -17,7 +17,12 @@ const GridSection = () => {
                 index === 0 || index === 4 ? "col-span-2 " : ""
               } ${index === 2 ? "row-span-2" : ""}`}
             >
-              <img src={item} alt="" className="rounded-lg" key={index} />
+              <img
+                src={item}
+                alt="socialmedia"
+                className="rounded-lg"
+                key={index}
+              />
             </div>
           ))}
         </div>
