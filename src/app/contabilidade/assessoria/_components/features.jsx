@@ -27,9 +27,7 @@ const FeatureItem = ({ title, icon, description }) => {
   return (
     <div className="flex w-full gap-5 shadow-lg bg-[#1cbae9] flex-1 p-10 padding-container items-center justify-center rounded-[50px]">
       <div className="w-[100%] flexCenter gap-3 flex-col">
-        <div className="rounded-full p-2 lg:p-2 ">
-          <Image src={icon} alt="map" width={60} height={60} />
-        </div>
+        <div className="rounded-full p-2 lg:p-2 "></div>
         <h2 className="text-2xl max-w-[240px] text-white font-boldcapitalize text-center">
           {title}
         </h2>

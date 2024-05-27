@@ -16,12 +16,12 @@ import "swiper/css";
 import Slide from "./slide-solutions";
 
 const imageItemsDesktop = [
-  <Image src={cardSlide} className="w-full h-full" alt="card" />,
-  <Image src={cardSlide2} className="w-full h-full" alt="card" />,
-  <Image src={cardSlide3} className="w-full h-full" alt="card" />,
-  <Image src={cardSlide4} className="w-full h-full" alt="card" />,
-  <Image src={cardSlide5} className="w-full h-full" alt="card" />,
-  <Image src={cardSlide6} className="w-full h-full" alt="card" />,
+  <Image src={cardSlide} className="w-full h-full" alt="card1" />,
+  <Image src={cardSlide2} className="w-full h-full" alt="card2" />,
+  <Image src={cardSlide3} className="w-full h-full" alt="card3" />,
+  <Image src={cardSlide4} className="w-full h-full" alt="card4" />,
+  <Image src={cardSlide5} className="w-full h-full" alt="card5" />,
+  <Image src={cardSlide6} className="w-full h-full" alt="card6" />,
 ];
 
 const Informations = () => {

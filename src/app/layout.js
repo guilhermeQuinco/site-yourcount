@@ -4,7 +4,7 @@ import "./globals.css";
 import { GeistSans } from "geist/font/sans";
 import Footer from "../components/Footer";
 import Link from "next/link";
-import NavBar from "../components/NavBar";
+import NavBar from "../components/Navbar";
 
 export const metadata = {
   title: "Your Count",

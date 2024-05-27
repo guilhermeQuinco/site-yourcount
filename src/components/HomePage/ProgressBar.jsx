@@ -23,7 +23,7 @@ const ProgressBar = () => {
         <div className="w-[100%] flexCenter flex-col">
           <div className="lg:w-[46%] md:w-[52%] w-[60%] h-[30px] font-bold text-3xl flexBetween">
             <div className=" p-2 bg-[#f22e9a] rounded-full flexCenter">
-              <Image src={Logo} width={30} height={30} />
+              <Image src={Logo} width={30} height={30} alt="logoBar" />
             </div>
           </div>
           <div className="lg:w-[80%] md:w-[90%] w-[100%] rounded-full h-[40px] border-2 border-white py-5 px-[0.45rem] mt-[20px] flex items-center">
