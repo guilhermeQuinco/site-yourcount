@@ -1,6 +1,5 @@
 import Illustration from "../svg/illustration";
 import { Separator } from "./separator";
-import { FaArrowAltCircleRight } from "react-icons/fa";
 
 export function PanelMarketingSolutions({ item }) {
   return (

@@ -53,7 +53,7 @@ export function MainNavBar({ className }) {
           {marketingSolutions.map((item, index) => (
             <Link
               href={item.href}
-              key={item.href}
+              key={index}
               className={cn(
                 "flex  h-7 items-center rounded-md px-4 text-center text-lg transition-colors hover:bg-white",
                 pathname?.startsWith(item.href) ||
