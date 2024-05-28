@@ -6,7 +6,7 @@ import { PiYoutubeLogoBold } from "react-icons/pi";
 
 export const MARKETING_CONTENT = [
   {
-    href: "/",
+    href: "/marketing-assessoria",
     title: "Assessoria de Marketing",
     description: "Como fazer sua empresa nunca parar de vender",
   },
@@ -16,7 +16,7 @@ export const MARKETING_CONTENT = [
     description: "Eleve Seu Negócio com um Site Personalizado",
   },
   {
-    href: "/",
+    href: "/social-media",
     title: " Social Media",
     description: "Eleve Seu Negócio com um Site Personalizado",
   },
