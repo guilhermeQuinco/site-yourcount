@@ -5,12 +5,6 @@ import {
   TabsList,
   TabsContent,
 } from "../../../../components/ui/tabs";
-import {
-  Card,
-  CardHeader,
-  CardDescription,
-  CardTitle,
-} from "../../../../components/ui/card";
 
 const SolutionsErp = () => {
   return (
@@ -47,7 +41,7 @@ const SolutionsErp = () => {
               Tecnologia
             </TabsTrigger>
           </TabsList>
-          <div className="bg-gray-200 rounded-lg p-8">
+          <div className="bg-[#dbf0f9] rounded-lg p-8">
             <TabsContent
               value="marketing"
               className="flex flex-row gap-10 w-[1200px] "

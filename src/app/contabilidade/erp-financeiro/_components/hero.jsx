@@ -15,6 +15,8 @@ const ErpHero = () => {
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti
             explicabo nihil architecto dignissimos perspiciatis eum sapiente ex
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed,
+            laboriosam. In nam tempora eaque ducimus, dolore, facilis maxime
           </p>
 
           <Button className="w-[40%] bg-[#1cbae9] p-6 rounded-lg font-bold text-lg">
