@@ -1,3 +1,4 @@
+import Grid from "@/components/HomePage/Grid";
 import EspecifiedSolutions from "../components/HomePage/EspecifiedSolutions";
 import FAQ from "../components/HomePage/FAQ";
 import Hero from "../components/HomePage/Hero";
@@ -11,7 +12,7 @@ export default function Home() {
       <Hero />
       <Solutions />
       <Video />
-      <ProgressBar />
+      <Grid />
       <EspecifiedSolutions />
       <FAQ />
     </div>

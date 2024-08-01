@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../../../components/ui/button";
 import card from "../../../../assets/Carousel1.svg";
 import card2 from "../../../../assets/Carousel2.svg";
 import card3 from "../../../../assets/Carousel3.svg";

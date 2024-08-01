@@ -29,6 +29,9 @@ import {
   EDUCATION_CONTENT,
   MARKETING_CONTENT,
 } from "../constants/index";
+import Marketing from "./svg/Marketing";
+import Accounting from "./svg/Accounting";
+import Company from "./svg/Company";
 
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
@@ -36,130 +39,130 @@ const NavBar = () => {
   return (
     <>
       <header
-        className={`w-full lg:fixed absolute transition-all top-0 py-6 z-10 shadow-xl bg-black
-      lg:top-0`}
+        className={`w-full  lg:fixed absolute transition-all top-0 py-4 z-10 shadow-xl bg-black
+      lg:top-0 backdrop-filter backdrop-blur-sm`}
       >
-        <NavigationMenu>
-          <NavigationMenuList>
-            <Link href={"/"}>
-              <Image src={Logo} width={200} height={100} alt="logoNavbar" />
-            </Link>
-            <div className="flex flex-row gap-5 items-center ">
-              <Link
-                href={"/"}
-                className="flexCenter text-lg text-gray-400 font-medium mr-5"
-              >
-                Sobre nós
+        <NavigationMenu className="w-full lg:flex hidden flex-row max-container padding-container justify-between ">
+          <Link href="/">
+            <Image src={Logo} width={150} height={90} />
+          </Link>
+
+          <NavigationMenuList className=" flex justify-between gap-10">
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Empresa</NavigationMenuTrigger>
+              <NavigationMenuContent className="flex">
+                <ul className="flex flex-col p-6 md:w-[400px] lg:w-[400px]">
+                  <h1 className="px-3 text-white font-bold text-xl flex items-center gap-3">
+                    <div className="p-2 bg-[#f22e9a] rounded-lg">
+                      <Company className="w-5" />
+                    </div>{" "}
+                    Empresa
+                  </h1>
+
+                  <li className="mt-3">
+                    <NavigationMenuLink asChild>
+                      <a
+                        className="flex w-full p-3 select-none flex-col rounded-md hover:bg-gray-600"
+                        href={""}
+                      >
+                        <div className="mb-2  text-lg font-medium text-white">
+                          <span>Sobre Nós</span>
+                        </div>
+                        <p className="text-sm leading-tight text-gray-300">
+                          Somos uma empresa que oferece soluções em
+                          contabilidade e marketing para impulsionar o sucesso
+                          dos nossos clientes.
+                        </p>
+                      </a>
+                    </NavigationMenuLink>
+                    <NavigationMenuLink asChild>
+                      <a
+                        className="flex w-full p-3 select-none flex-col rounded-md hover:bg-gray-600"
+                        href={""}
+                      >
+                        <div className="mb-2  text-lg font-medium text-white">
+                          <span>Carreiras</span>
+                        </div>
+                        <p className="text-sm leading-tight text-gray-300">
+                          Somos uma empresa que oferece soluções em
+                          contabilidade e marketing para impulsionar o sucesso
+                          dos nossos clientes.
+                        </p>
+                      </a>
+                    </NavigationMenuLink>
+                  </li>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Soluções</NavigationMenuTrigger>
+              <NavigationMenuContent className="flex">
+                <ul className="flex flex-col p-6 md:w-[400px] lg:w-[400px]">
+                  <h1 className="px-3 text-white font-bold text-xl flex items-center gap-3">
+                    <div className="p-2 bg-[#f22e9a] rounded-lg">
+                      <Marketing className="w-5" />
+                    </div>
+                    Marketing
+                  </h1>
+                  {MARKETING_CONTENT.map((item) => (
+                    <li className="mt-3">
+                      <NavigationMenuLink asChild>
+                        <a
+                          className="flex w-full p-3 select-none flex-col rounded-md hover:bg-gray-600"
+                          href={item.href}
+                        >
+                          <div className="mb-2  text-lg font-medium text-white">
+                            {item.title}
+                          </div>
+                          <p className="text-sm leading-tight text-gray-300">
+                            {item.description}
+                          </p>
+                        </a>
+                      </NavigationMenuLink>
+                    </li>
+                  ))}
+                </ul>
+                <ul className="flex flex-col p-6 md:w-[400px] lg:w-[400px] ">
+                  <h1 className="px-3 text-white font-bold text-xl flex gap-3 items-center">
+                    <div className="p-2 rounded-lg bg-[#1cbae9]">
+                      <Accounting className="w-5" />
+                    </div>
+                    Contabilidade
+                  </h1>
+                  {COUNT_CONTENT.map((item) => (
+                    <li className=" mt-3">
+                      <NavigationMenuLink asChild>
+                        <a
+                          className="flex  w-full p-3 select-none flex-col  rounded-md hover:bg-gray-600"
+                          href={item.href}
+                        >
+                          <div className="mb-2  text-lg font-medium text-white">
+                            {item.title}
+                          </div>
+                          <p className="text-sm leading-tight text-gray-300">
+                            {item.description}
+                          </p>
+                        </a>
+                      </NavigationMenuLink>
+                    </li>
+                  ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+
+            <NavigationMenuItem>
+              <Link href="/docs" legacyBehavior passHref>
+                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  Documentation
+                </NavigationMenuLink>
               </Link>
-
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-lg flexCenter text-gray-400">
-                  Marketing
-                </NavigationMenuTrigger>
-
-                <NavigationMenuContent className=" bg-black p-6">
-                  <div className="flex w-screen flexCenter px-36 ">
-                    <div className="row-span-3 flex flex-row gap-8">
-                      {MARKETING_CONTENT.map((item, index) => (
-                        <div
-                          className="flex h-full w-full max-w-[400px] bg-gradient-to-b  select-none gap-3 flex-col 
-                    justify-end rounded-md from-[#171326] to-[#1d1c40] p-6 no-underline outline-none focus:shadow-md space-y-2"
-                          key={index}
-                        >
-                          <div className=" mt-4 text-2xl font-medium text-white">
-                            {item.title}
-                          </div>
-                          <p className="text-lg leading-tight  text-muted-foreground text-white">
-                            {item.description}
-                          </p>
-
-                          <Link
-                            href={item.href}
-                            className=" text-white w-[30%] font-bold rounded-lg py-2 "
-                          >
-                            Saiba mais
-                          </Link>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-lg text-gray-400">
-                  Contabilidade
-                </NavigationMenuTrigger>
-                <NavigationMenuContent className=" bg-black p-6">
-                  <div className="flex w-screen flexCenter px-36 ">
-                    <div className="row-span-3 flex flex-row gap-8 ">
-                      {COUNT_CONTENT.map((item, index) => (
-                        <div
-                          className="flex h-full w-full max-w-[400px] bg-gradient-to-b  select-none gap-3
-                     flex-col justify-end rounded-md from-[#171326] to-[#1d1c40] p-6 no-underline outline-none focus:shadow-md space-y-2"
-                          key={index}
-                        >
-                          <div className=" mt-4 text-2xl font-medium text-white">
-                            {item.title}
-                          </div>
-                          <p className="text-lg leading-tight  text-muted-foreground text-white">
-                            {item.description}
-                          </p>
-
-                          <Link
-                            href={"/"}
-                            className=" text-white w-[30%] font-bold rounded-lg py-2 "
-                          >
-                            Saiba mais
-                          </Link>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-lg text-gray-400">
-                  Educação
-                </NavigationMenuTrigger>
-                <NavigationMenuContent className=" bg-black p-6">
-                  <div className="flex  w-screen flexCenter px-36 ">
-                    <div className="row-span-3 flex flex-row gap-8 ">
-                      {EDUCATION_CONTENT.map((item, index) => (
-                        <div
-                          className="flex h-full w-full max-w-[400px] bg-gradient-to-b  select-none gap-3 
-                    flex-col justify-end rounded-md from-[#171326] to-[#1d1c40] p-6 no-underline 
-                    outline-none focus:shadow-md space-y-2"
-                          key={index}
-                        >
-                          <div className=" mt-4 text-2xl font-medium text-white">
-                            {item.title}
-                          </div>
-                          <p className="text-lg leading-tight  text-muted-foreground text-white">
-                            {item.description}
-                          </p>
-
-                          <Link
-                            href={"/"}
-                            className=" text-white w-[30%] font-bold rounded-lg py-2 "
-                          >
-                            Saiba mais
-                          </Link>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </NavigationMenuContent>
-              </NavigationMenuItem>
-              <div className="pl-10  border-l-2 border-gray-600">
-                <Button
-                  className="text-xl py-6 px-10 font-bold "
-                  variant="secondary"
-                >
-                  Fale com a gente
-                </Button>
-              </div>
-            </div>
+            </NavigationMenuItem>
           </NavigationMenuList>
+
+          <Button className="bg-white text-black font-bold text-md py-5">
+            Fale conosco
+          </Button>
         </NavigationMenu>
 
         {/* MOBILE */}
@@ -185,7 +188,7 @@ const NavBar = () => {
             className="text-md w-[50%] py-6 font-bold "
             variant="secondary"
           >
-            Fale com a gente
+            Fale conosco
           </Button>
         </nav>
       </header>
@@ -193,94 +196,104 @@ const NavBar = () => {
       <div
         className={` ${
           toggle
-            ? " lg:hidden absolute z-30 bg-black  top-24 left-0 w-full py-5 max-container padding-container flex flex-col gap-10 ease-in duration-100"
+            ? " lg:hidden absolute z-30 bg-black  top-20 left-0 w-full py-5 max-container padding-container flex flex-col gap-10 ease-in duration-100"
             : "lg:hidden absolute z-30 bg-black  -left-[100%] top-24 w-full py-5 max-container padding-container flex flex-col gap-10 ease-in duration-100"
         }  `}
       >
-        <ul>
-          <li className="w-full py-6 border-b text-white  text-xl font-bold ">
-            Sobre Nós
-          </li>
+        <ul className="w-full">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="item-1">
-              <AccordionTrigger>Marketing</AccordionTrigger>
+              <AccordionTrigger>Empresa</AccordionTrigger>
               <AccordionContent>
-                {MARKETING_CONTENT.map((item, index) => (
-                  <div
-                    className="flex h-full w-full  bg-gradient-to-b  select-none gap-3 flex-col 
-               justify-end rounded-md from-[#171326] to-[#1d1c40] p-6 no-underline outline-none 
-               focus:shadow-md space-y-2 mt-5"
-                    key={index}
-                  >
-                    <div className=" mt-4 text-2xl font-medium text-white">
-                      {item.title}
-                    </div>
-                    <p className="text-lg leading-tight  text-muted-foreground text-white">
-                      {item.description}
-                    </p>
+                <ul className="w-full flex flex-col">
+                  <h1 className="px-3 text-white font-bold text-xl flex items-center gap-3">
+                    <div className="p-2 bg-[#f22e9a] rounded-lg">
+                      <Company className="w-5" />
+                    </div>{" "}
+                    Empresa
+                  </h1>
 
-                    <Link
-                      href={"/"}
-                      className=" text-white w-[30%] font-bold rounded-lg py-2 "
+                  <li className="mt-3">
+                    <a
+                      className="flex w-full p-3 select-none flex-col rounded-md hover:bg-gray-600"
+                      href={""}
                     >
-                      Saiba mais
-                    </Link>
-                  </div>
-                ))}
+                      <div className="mb-2  text-lg font-medium text-white">
+                        <span>Sobre Nós</span>
+                      </div>
+                      <p className="text-sm leading-tight text-gray-300">
+                        Somos uma empresa que oferece soluções em contabilidade
+                        e marketing para impulsionar o sucesso dos nossos
+                        clientes.
+                      </p>
+                    </a>
+
+                    <a
+                      className="flex w-full p-3 select-none flex-col rounded-md hover:bg-gray-600"
+                      href={""}
+                    >
+                      <div className="mb-2  text-lg font-medium text-white">
+                        <span>Carreiras</span>
+                      </div>
+                      <p className="text-sm leading-tight text-gray-300">
+                        Somos uma empresa que oferece soluções em contabilidade
+                        e marketing para impulsionar o sucesso dos nossos
+                        clientes.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
               </AccordionContent>
             </AccordionItem>
             <AccordionItem value="item-2">
-              <AccordionTrigger>Contabilidade</AccordionTrigger>
+              <AccordionTrigger>Soluções</AccordionTrigger>
               <AccordionContent>
-                {COUNT_CONTENT.map((item, index) => (
-                  <div
-                    className="flex h-full w-full  bg-gradient-to-b  select-none gap-3 flex-col 
-             justify-end rounded-md from-[#171326] to-[#1d1c40] p-6 no-underline outline-none 
-             focus:shadow-md space-y-2 mt-5"
-                    key={index}
-                  >
-                    <div className=" mt-4 text-2xl font-medium text-white">
-                      {item.title}
+                <ul className="flex flex-col  w-full">
+                  <h1 className="px-3 text-white font-bold text-xl flex items-center gap-3">
+                    <div className="p-2 bg-[#f22e9a] rounded-lg">
+                      <Marketing className="w-5" />
                     </div>
-                    <p className="text-lg leading-tight  text-muted-foreground text-white">
-                      {item.description}
-                    </p>
-
-                    <Link
-                      href={"/"}
-                      className=" text-white w-[30%] font-bold rounded-lg py-2 "
-                    >
-                      Saiba mais
-                    </Link>
-                  </div>
-                ))}
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger>Educação</AccordionTrigger>
-              <AccordionContent>
-                {EDUCATION_CONTENT.map((item, index) => (
-                  <div
-                    className="flex h-full w-full  bg-gradient-to-b  select-none gap-3 flex-col 
-             justify-end rounded-md from-[#171326] to-[#1d1c40] p-6 no-underline outline-none 
-             focus:shadow-md space-y-2 mt-5"
-                    key={index}
-                  >
-                    <div className=" mt-4 text-2xl font-medium text-white">
-                      {item.title}
+                    Marketing
+                  </h1>
+                  {MARKETING_CONTENT.map((item) => (
+                    <li className="mt-3">
+                      <a
+                        className="flex w-full p-3 select-none flex-col rounded-md hover:bg-gray-600"
+                        href={item.href}
+                      >
+                        <div className="mb-2  text-lg font-medium text-white">
+                          {item.title}
+                        </div>
+                        <p className="text-sm leading-tight text-gray-300">
+                          {item.description}
+                        </p>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+                <ul className="flex flex-col md:w-[400px] w-full mt-10">
+                  <h1 className="px-3 text-white font-bold text-xl flex gap-3 items-center">
+                    <div className="p-2 rounded-lg bg-[#1cbae9]">
+                      <Accounting className="w-5" />
                     </div>
-                    <p className="text-lg leading-tight  text-muted-foreground text-white">
-                      {item.description}
-                    </p>
-
-                    <Link
-                      href={"/"}
-                      className=" text-white w-[30%] font-bold rounded-lg py-2 "
-                    >
-                      Saiba mais
-                    </Link>
-                  </div>
-                ))}
+                    Contabilidade
+                  </h1>
+                  {COUNT_CONTENT.map((item) => (
+                    <li className=" mt-3">
+                      <a
+                        className="flex  w-full p-3 select-none flex-col  rounded-md hover:bg-gray-600"
+                        href={item.href}
+                      >
+                        <div className="mb-2  text-lg font-medium text-white">
+                          {item.title}
+                        </div>
+                        <p className="text-sm leading-tight text-gray-300">
+                          {item.description}
+                        </p>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </AccordionContent>
             </AccordionItem>
           </Accordion>

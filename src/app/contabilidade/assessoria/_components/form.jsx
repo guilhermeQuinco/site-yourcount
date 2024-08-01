@@ -1,8 +1,8 @@
 "use client";
 import * as React from "react";
 import Image from "next/image";
-import { CONTACTS } from "@/constants";
-import { DropdownForm } from "@/constants";
+import { CONTACTS } from "../../../../constants";
+import { DropdownForm } from "../../../../constants";
 
 const Form = () => {
   return (

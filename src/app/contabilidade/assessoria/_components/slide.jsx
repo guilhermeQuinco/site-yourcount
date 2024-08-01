@@ -3,7 +3,7 @@ import { FaArrowAltCircleLeft } from "react-icons/fa";
 import { useState } from "react";
 
 const Slide = ({ items }) => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(5);
 
   function handleNextItemBtn() {
     setActiveIndex((prev) => {

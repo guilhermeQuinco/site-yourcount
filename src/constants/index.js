@@ -8,23 +8,26 @@ export const MARKETING_CONTENT = [
   {
     href: "/marketing-assessoria",
     title: "Assessoria de Marketing",
-    description: "Como fazer sua empresa nunca parar de vender",
+    description:
+      " A assessoria de marketing aumentará a visibilidade da sua marca com estratégias personalizadas e baseadas em dados.",
   },
   {
     href: "/",
     title: "Criação de sites",
-    description: "Eleve Seu Negócio com um Site Personalizado",
+    description:
+      "A criação de sites personalizados desenvolverá um website único e otimizado, adaptado às necessidades específicas da sua marca.",
   },
   {
     href: "/social-media",
     title: " Social Media",
-    description: "Eleve Seu Negócio com um Site Personalizado",
+    description:
+      "O serviço de social media impulsionará sua presença online com estratégias criativas e análise de dados..",
   },
 ];
 export const COUNT_CONTENT = [
   {
-    href: "/",
-    title: "Assessoria de Contabilidade",
+    href: "/contabilidade/assessoria",
+    title: "Assessoria Contabil",
     description: "Como fazer sua empresa nunca parar de vender",
   },
   {

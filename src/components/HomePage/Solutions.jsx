@@ -12,7 +12,7 @@ const Solutions = () => {
   const solutions = ["marketing", "educação", "contablidade", "tecnologia"];
 
   return (
-    <section className="w-full overflow-hidden mt-[150px] mb-[100px] py-12 ">
+    <section className="w-full overflow-hidden mt-[80px] mb-[100px] py-12 ">
       <div className="max-container padding-container flex lg:flex-row flex-col gap-10 justify-between ">
         <div className="flex flex-col gap-5 max-w-[400px]">
           <div className="flex items-center  w-fit p-5 max-h-8 lg:px-6 lg:h-9 rounded-full border-2 border-white">
@@ -24,8 +24,12 @@ const Solutions = () => {
             O ecossistema que seu negócio merece
           </h1>
           <p className="text-gray-300 text-xl">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore,
-            quae dolor at id dolores incidunt aliquam corporis repudiandae
+            Contamos com soluções feitas sob medida para a sua empresa! <br />{" "}
+            <br />
+            Seremos o seu parceiro em todos os estágios do seu negócio:{" "}
+            <span className="font-bold text-[#f22e9a]">
+              Criação, Regulamentação e Tração!
+            </span>
           </p>
         </div>
 
