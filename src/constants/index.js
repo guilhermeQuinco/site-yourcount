@@ -297,7 +297,7 @@ export const SERVICES_CAROUSEL = [
   {
     title: "Inbounding",
     description:
-      "Atraímos e engajamos seu público-alvo, convertendo visitantes em clientes fiéis.",
+      "Atraímos e engajamos seu público-alvo, convertendo visitantes em clientes fiéis",
     image: inbounding,
   },
 ];
