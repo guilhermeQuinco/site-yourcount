@@ -5,8 +5,6 @@ import { LuLinkedin } from "react-icons/lu";
 import { PiYoutubeLogoBold } from "react-icons/pi";
 import { inbounding, website, socialmedia } from "@/assets";
 
-import cardGrid3 from "../assets/cardGrid3.png";
-
 export const MARKETING_CONTENT = [
   {
     href: "/marketing-assessoria",
