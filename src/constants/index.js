@@ -198,8 +198,7 @@ export const HOME_FAQ = [
     value: "Vocês oferecem relatórios de desempenho para todos os serviços?",
     title: "Vocês oferecem relatórios de desempenho para todos os serviços? ",
     content:
-      " Sim, fornecemos relatórios detalhados e regulares sobre o desempenho de todas as nossas campanhas e serviços, destacando as principais métricas e insights para otimização contínua.
-",
+      " Sim, fornecemos relatórios detalhados e regulares sobre o desempenho de todas as nossas campanhas e serviços, destacando as principais métricas e insights para otimização contínua.",
   },
 ];
 
