@@ -10,7 +10,9 @@ export default function FaqStructure({ items }) {
     <Accordion type="single" collapsible className="lg:w-[50%] w-full ">
       {items.map((item) => (
         <AccordionItem value={item.value} key={item.value}>
-          <AccordionTrigger>{item.title}</AccordionTrigger>
+          <AccordionTrigger className="text-left">
+            {item.title}
+          </AccordionTrigger>
           <AccordionContent>{item.content}</AccordionContent>
         </AccordionItem>
       ))}

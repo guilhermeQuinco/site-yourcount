@@ -123,40 +123,7 @@ const NavBar = () => {
                     </li>
                   ))}
                 </ul>
-                <ul className="flex flex-col p-6 md:w-[400px] lg:w-[400px] ">
-                  <h1 className="px-3 text-white font-bold text-xl flex gap-3 items-center">
-                    <div className="p-2 rounded-lg bg-[#1cbae9]">
-                      <Accounting className="w-5" />
-                    </div>
-                    Contabilidade
-                  </h1>
-                  {COUNT_CONTENT.map((item) => (
-                    <li className=" mt-3">
-                      <NavigationMenuLink asChild>
-                        <a
-                          className="flex  w-full p-3 select-none flex-col  rounded-md hover:bg-gray-600"
-                          href={item.href}
-                        >
-                          <div className="mb-2  text-lg font-medium text-white">
-                            {item.title}
-                          </div>
-                          <p className="text-sm leading-tight text-gray-300">
-                            {item.description}
-                          </p>
-                        </a>
-                      </NavigationMenuLink>
-                    </li>
-                  ))}
-                </ul>
               </NavigationMenuContent>
-            </NavigationMenuItem>
-
-            <NavigationMenuItem>
-              <Link href="/docs" legacyBehavior passHref>
-                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  Documentation
-                </NavigationMenuLink>
-              </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
 

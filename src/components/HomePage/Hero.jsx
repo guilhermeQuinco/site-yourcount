@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="max-container padding-container mt-[80px]  flex flex-col gap-10 flexCenter z-10">
         <div className="flex items-center  w-fit p-5 max-h-8 lg:px-5 lg:h-9 rounded-full border-2 border-white">
           <span className="text-whitetext-xs lg:text-xl text-transparent bg-clip-text bg-gradient-to-r from-white to-white/60 font-medium font-mono">
-            O ecossistesma perfeito para o seu negócio
+            Procurando uma empresa de marketing?
           </span>
         </div>
         <h1 className="max-w-[780px] text-center text-white font-normal text-5xl">

@@ -7,12 +7,14 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../../components/ui/carousel";
+import { SERVICES_CAROUSEL } from "@/constants";
+import Image from "next/image";
 
 const Solutions = () => {
   const solutions = ["marketing", "educação", "contablidade", "tecnologia"];
 
   return (
-    <section className="w-full overflow-hidden mt-[80px] mb-[100px] py-12 ">
+    <section className="w-full overflow-hidden mt-[80px]  py-12 ">
       <div className="max-container padding-container flex lg:flex-row flex-col gap-10 justify-between ">
         <div className="flex flex-col gap-5 max-w-[400px]">
           <div className="flex items-center  w-fit p-5 max-h-8 lg:px-6 lg:h-9 rounded-full border-2 border-white">
@@ -41,7 +43,7 @@ const Solutions = () => {
             className="w-full "
           >
             <CarouselContent>
-              {solutions.map((item, index) => (
+              {SERVICES_CAROUSEL.map((item, index) => (
                 <CarouselItem
                   key={index}
                   className="basis-1/1 lg:basis-1/2 ml-2"
@@ -49,8 +51,14 @@ const Solutions = () => {
                   <div className="p-1 ">
                     <a href="">
                       {" "}
-                      <Card className="lg:w-[320px] w-[320px] h-[500px] rounded-[40px] flexCenter hover:scale-105 transition-all duration-500">
-                        <span>{item}</span>
+                      <Card className="lg:w-[320px] w-[320px] h-[500px] rounded-[40px] flexCenter hover:scale-105 transition-all duration-500 bg-gray-800 border-none">
+                        <div className="flex flex-col gap-5 p-5 flex-1">
+                          <h1 className="text-white text-2xl">{item.title}</h1>
+                          <Image src={item.image} className="w-[90%] h-[90%]" />
+                          <span className="text-white text-center">
+                            {item.description}
+                          </span>
+                        </div>
                       </Card>
                     </a>
                   </div>

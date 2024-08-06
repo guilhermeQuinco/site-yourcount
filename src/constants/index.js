@@ -3,6 +3,9 @@ import { PiFacebookLogoBold } from "react-icons/pi";
 import { PiTiktokLogoBold } from "react-icons/pi";
 import { LuLinkedin } from "react-icons/lu";
 import { PiYoutubeLogoBold } from "react-icons/pi";
+import { inbounding, website, socialmedia } from "@/assets";
+
+import cardGrid3 from "../assets/cardGrid3.png";
 
 export const MARKETING_CONTENT = [
   {
@@ -64,27 +67,6 @@ export const ALL_SOLUTIONS = [
     href: "/social-media",
     title: " Social Media",
     description: "Eleve Seu Negócio com um Site Personalizado",
-  },
-  {
-    href: "/",
-    title: "Assessoria de Contabilidade",
-    description: "Como fazer sua empresa nunca parar de vender",
-  },
-  {
-    href: "/",
-    title: "ERP Financeiro",
-    description: "Eleve Seu Negócio ao Próximo Nível com um Site Personalizado",
-  },
-
-  {
-    href: "/",
-    title: "Plataforma",
-    description: "Como fazer sua empresa nunca parar de vender",
-  },
-  {
-    href: "/",
-    title: "Conteúdos",
-    description: "Eleve Seu Negócio ao Próximo Nível com um Site Personalizado",
   },
 ];
 
@@ -183,39 +165,41 @@ export const MARKETING_FAQ = [
 ];
 export const HOME_FAQ = [
   {
-    value: "item-1",
-    title: "Is it accessible?",
-    content: "Yes. It adheres to the WAI-ARIA design pattern.",
+    value: "Quais serviços vocês oferecem?",
+    title: "Quais serviços vocês oferecem?",
+    content:
+      "Oferecemos serviços de social media, criação de sites e inbound marketing. Cada serviço é projetado para melhorar sua presença digital, atrair clientes e impulsionar seu crescimento.",
   },
   {
-    value: "item-2",
-    title: "Is it styled?",
+    value: " O que é inbound marketing e como ele pode beneficiar meu negócio?",
+    title: " O que é inbound marketing e como ele pode beneficiar meu negócio?",
     content:
-      "Yes. It comes with default styles that matches the other components aesthetic.",
+      "Inbound marketing é uma estratégia que atrai, engaja e encanta clientes através de conteúdo relevante. Ele ajuda a aumentar a visibilidade online, atrair clientes qualificados e construir relacionamentos duradouros, resultando em mais vendas e fidelização de clientes.",
   },
   {
-    value: "item-3",
-    title: "Is it animated? ",
+    value: "Quais são as etapas do inbound marketing?",
+    title: "Quais são as etapas do inbound marketing? ",
     content:
-      " Yes. It's animated by default, but you can disable it if you prefer.",
+      "As principais etapas são: atração (atrair visitantes), conversão (converter visitantes em leads), fechamento (transformar leads em clientes) e encantamento (fidelizar clientes).",
   },
   {
-    value: "item-4",
-    title: "Is it animated? ",
+    value: " O que envolve o serviço de social media?",
+    title: " O que envolve o serviço de social media? ",
     content:
-      " Yes. It's animated by default, but you can disable it if you prefer.",
+      " Nosso serviço de social media inclui a criação de estratégias de conteúdo, gerenciamento de perfis sociais, interação com seguidores e análise de desempenho para aumentar visibilidade e engajamento.",
   },
   {
-    value: "item-5",
-    title: "Is it animated? ",
+    value: "O que está incluído no serviço de criação de sites?",
+    title: "O que está incluído no serviço de criação de sites? ",
     content:
-      " Yes. It's animated by default, but you can disable it if you prefer.",
+      "Criamos sites modernos e funcionais com design personalizado e tecnologia de ponta, otimizados para performance e usabilidade, destacando sua marca e atraindo visitantes.",
   },
   {
-    value: "item-6",
-    title: "Is it animated? ",
+    value: "Vocês oferecem relatórios de desempenho para todos os serviços?",
+    title: "Vocês oferecem relatórios de desempenho para todos os serviços? ",
     content:
-      " Yes. It's animated by default, but you can disable it if you prefer.",
+      " Sim, fornecemos relatórios detalhados e regulares sobre o desempenho de todas as nossas campanhas e serviços, destacando as principais métricas e insights para otimização contínua.
+",
   },
 ];
 
@@ -273,5 +257,48 @@ export const FEATURES = [
     variant: "orange",
     description:
       " Transparência e a confiança com stakeholders, incluindo investidores, bancos e outras partes interessadas, através de relatórios financeiros claros e confiáveis. ",
+  },
+];
+
+export const CARD_GRIDS = [
+  {
+    title: "Inovação estratégica",
+    description:
+      "Transforme ideias em ações concretas e veja seu negócio crescer exponencialmente. A inovação é a chave para se destacar no mercado.",
+  },
+  {
+    title: "Crescimento Sustentável",
+    description:
+      "Construa uma base sólida para o seu negócio e prepare-se para um crescimento sustentável a longo prazo. Planejamento é essencial.",
+  },
+  {
+    title: "Conexões que Impulsionam",
+    description: "Construa redes de contatos que agreguem valor  ",
+  },
+  {
+    title: "Tomada de Decisão Informada",
+    description:
+      "Tome decisões baseadas em dados concretos e insights valiosos. O conhecimento é poder para o empreendedor moderno",
+  },
+];
+
+export const SERVICES_CAROUSEL = [
+  {
+    title: "Social media",
+    description:
+      "Elevamos sua presença digital com estratégias de conteúdo criativas e análises precisas.",
+    image: socialmedia,
+  },
+  {
+    title: "Criação de sites",
+    description:
+      "Criamos sites modernos e funcionais que destacam sua marca e atraem visitantes.",
+    image: website,
+  },
+  {
+    title: "Inbounding",
+    description:
+      "Atraímos e engajamos seu público-alvo, convertendo visitantes em clientes fiéis.",
+    image: inbounding,
   },
 ];

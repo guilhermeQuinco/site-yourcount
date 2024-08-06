@@ -51,24 +51,9 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col gap-5">
-            <h1 className="text-zinc-500 text-xl uppercase">Conteúdos</h1>
-            <div className="flex flex-col space-y-2">
-              {CONTENTS.map((item, index) => (
-                <Link href={item.href}>
-                  <span
-                    className="text-white text-lg  hover:text-[#f22e9a]"
-                    key={index}
-                  >
-                    {item.title}
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
 
           <div className="flex flex-col gap-5">
-            <h1 className="text-zinc-500 text-xl uppercase">Sobre</h1>
+            <h1 className="text-zinc-500 text-xl uppercase">Empresa</h1>
             <div className="flex flex-col space-y-2">
               {CONTENTS.map((item, index) => (
                 <Link href={item.href}>
@@ -88,16 +73,16 @@ const Footer = () => {
               Entre em contato
             </h1>
             <div className="flex flex-col space-y-2">
-              {CONTENTS.map((item, index) => (
-                <Link href={item.href}>
-                  <span
-                    className="text-white text-lg  hover:text-[#f22e9a]"
-                    key={index}
-                  >
-                    {item.title}
-                  </span>
-                </Link>
-              ))}
+              <Link href={"/"}>
+                <span className="text-white text-lg  hover:text-[#f22e9a]">
+                  contato@yourcount.com.br
+                </span>
+              </Link>
+              <Link href={"/"}>
+                <span className="text-white text-lg  hover:text-[#f22e9a]">
+                  (92) 98121-4434
+                </span>
+              </Link>
             </div>
           </div>
         </div>
